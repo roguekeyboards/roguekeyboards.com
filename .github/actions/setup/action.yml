@@ -1,0 +1,19 @@
+name: Set up roguekeyboards.com
+description: Installs Node via mise and the npm dependencies.
+
+runs:
+  using: composite
+  steps:
+    - name: Set up mise
+      uses: jdx/mise-action@6612f0ef07ed2a736cd1e00a94a065522dd41195 # v5.2.5
+
+    - name: Cache npm downloads
+      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      with:
+        path: ~/.npm
+        key: npm-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+        restore-keys: npm-${{ runner.os }}-
+
+    - name: Install dependencies
+      shell: bash
+      run: npm ci
