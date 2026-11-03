@@ -19,4 +19,9 @@ lint or test setup.
   deploy that tag to `roguekeyboards-com-prod` on https://roguekeyboards.com, using the
   `CLOUDFLARE_API_TOKEN` secret. A route change in `env.production` is deployed by hand with
   `npx wrangler deploy --env production`.
+- **Brand:** colours, fonts (Sora), logos and favicons come from `@roguekeyboards/brand`, and mykeebs'
+  artwork from `@roguekeyboards/mykeebs-brand`, both on GitHub Packages. Change them in the
+  [brand](https://github.com/roguekeyboards/brand) and
+  [mykeebs-brand](https://github.com/roguekeyboards/mykeebs-brand) repos, not here. Run
+  `eval "$(mise env)"` before `npm install` if `GITHUB_PACKAGES_TOKEN` isn't in your shell.
 - `static/_headers` sets the security headers, and `X-Robots-Tag: noindex` on beta only.

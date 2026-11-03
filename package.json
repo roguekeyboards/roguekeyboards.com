@@ -50,5 +50,9 @@
 	"imports": {
 		"#lib": "./src/lib/index.js",
 		"#lib/*": "./src/lib/*"
+	},
+	"dependencies": {
+		"@roguekeyboards/brand": "^0.1.1",
+		"@roguekeyboards/mykeebs-brand": "^1.71.0"
 	}
 }

@@ -28,6 +28,19 @@
 			"description": "adapter-static's majors require the matching SvelteKit major, so they arrive in one PR",
 			"groupName": "sveltekit",
 			"matchPackageNames": ["@sveltejs/kit", "@sveltejs/adapter-static"]
+		},
+		{
+			"description": "Our own packages, published by the brand repos' releases, skip the release-age wait",
+			"matchPackageNames": ["@roguekeyboards/**"],
+			"minimumReleaseAge": null
+		}
+	],
+	"hostRules": [
+		{
+			"description": "@roguekeyboards packages live on GitHub Packages; the workflow passes its GITHUB_TOKEN",
+			"matchHost": "npm.pkg.github.com",
+			"hostType": "npm",
+			"token": "{{ secrets.PACKAGES_TOKEN }}"
 		}
 	],
 	"lockFileMaintenance": {

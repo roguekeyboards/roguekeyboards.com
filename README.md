@@ -6,7 +6,8 @@ Tailwind v4.
 
 ## Development
 
-[mise](https://mise.jdx.dev) installs the Node version in `mise.toml`.
+[mise](https://mise.jdx.dev) installs the Node version in `mise.toml`. The brand packages come from
+GitHub Packages, so put a PAT with `read:packages` in `mise.local.toml` as `GITHUB_PACKAGES_TOKEN`.
 
 ```sh
 npm install
@@ -35,5 +36,5 @@ Releases deploy to https://roguekeyboards.com through `.github/workflows/deploy-
 
 ## License
 
-The code is [MIT](LICENSE-MIT). The Rogue Keyboards name and logo, the written content, fonts and
+The code is [MIT](LICENSE-MIT). The Rogue Keyboards and mykeebs brands, the written content, fonts and
 third-party packages aren't; see [`LICENSE`](LICENSE).

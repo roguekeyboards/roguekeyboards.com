@@ -1,5 +1,10 @@
 name: Set up roguekeyboards.com
-description: Installs Node via mise and the npm dependencies.
+description: Installs Node via mise and the npm dependencies, including the Rogue Keyboards and mykeebs brand packages from GitHub Packages.
+
+inputs:
+  packages-token:
+    description: Token with read access to the @roguekeyboards GitHub Packages registry.
+    required: true
 
 runs:
   using: composite
@@ -17,3 +22,5 @@ runs:
     - name: Install dependencies
       shell: bash
       run: npm ci
+      env:
+        GITHUB_PACKAGES_TOKEN: ${{ inputs.packages-token }}
