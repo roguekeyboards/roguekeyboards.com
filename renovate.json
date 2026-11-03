@@ -1,0 +1,38 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"config:recommended",
+		"helpers:pinGitHubActionDigestsToSemver",
+		":semanticCommits",
+		"security:minimumReleaseAgeNpm"
+	],
+	"automerge": true,
+	"prHourlyLimit": 0,
+	"constraints": {
+		"npm": "^11"
+	},
+	"packageRules": [
+		{
+			"description": "Major updates wait for approval on the Dependency Dashboard and need a human look; everything else merges once CI passes",
+			"matchUpdateTypes": ["major"],
+			"automerge": false,
+			"dependencyDashboardApproval": true
+		},
+		{
+			"description": "Node in mise.toml and .node-version, and its @types/node, always move together",
+			"groupName": "node",
+			"matchManagers": ["mise", "nodenv", "npm"],
+			"matchPackageNames": ["node", "@types/node"]
+		},
+		{
+			"description": "adapter-static's majors require the matching SvelteKit major, so they arrive in one PR",
+			"groupName": "sveltekit",
+			"matchPackageNames": ["@sveltejs/kit", "@sveltejs/adapter-static"]
+		}
+	],
+	"lockFileMaintenance": {
+		"enabled": true,
+		"automerge": true,
+		"schedule": ["before 12pm on monday"]
+	}
+}
