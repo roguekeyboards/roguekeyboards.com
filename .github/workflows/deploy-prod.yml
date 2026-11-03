@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: read
+  packages: read
 
 concurrency:
   group: deploy-prod
@@ -30,6 +31,8 @@ jobs:
         with:
           ref: ${{ env.TAG }}
       - uses: ./.github/actions/setup
+        with:
+          packages-token: ${{ secrets.GITHUB_TOKEN }}
       - run: npm run build
       # versions upload/deploy leave the custom domain alone, so the token only needs
       # Workers Editor on roguekeyboards-com-prod, not zone access.

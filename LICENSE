@@ -4,7 +4,9 @@ The code in this repository is covered by the MIT license, in LICENSE-MIT.
 
 The following are not covered by the MIT license:
 
-- The Rogue Keyboards name and logo, and the written content of the site.
-  All rights reserved.
+- The Rogue Keyboards and mykeebs names, logos, icons and design tokens, from
+  @roguekeyboards/brand and @roguekeyboards/mykeebs-brand, under the terms in
+  those packages' LICENSE files.
+- The written content of the site. All rights reserved.
 - Fonts and third-party packages the built site contains, under their own
   licenses.
