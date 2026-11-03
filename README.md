@@ -27,6 +27,12 @@ squash, with signed commits. CI runs `Lint`, `Typecheck`, `Test`, `Build` and `P
 plus CodeQL. release-please keeps a release PR open from the commits on `main`, and Renovate keeps
 dependencies current.
 
+## Deploys
+
+Merges to `main` deploy to https://beta.roguekeyboards.com through Cloudflare Workers Builds.
+Releases deploy to https://roguekeyboards.com through `.github/workflows/deploy-prod.yml`.
+`mise run deploy-dev` deploys the current branch to beta (needs `wrangler login`).
+
 ## License
 
 The code is [MIT](LICENSE-MIT). The Rogue Keyboards name and logo, the written content, fonts and

@@ -1,0 +1,21 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "roguekeyboards-com-dev",
+	"account_id": "9b74b720ce36ddde284a16e292014b49",
+	"compatibility_date": "2026-10-28",
+	"assets": {
+		"directory": "./build",
+		"not_found_handling": "404-page"
+	},
+	"workers_dev": false,
+	"preview_urls": false,
+	"routes": [{ "pattern": "beta.roguekeyboards.com", "custom_domain": true }],
+	"env": {
+		"production": {
+			"name": "roguekeyboards-com-prod",
+			"workers_dev": false,
+			"preview_urls": false,
+			"routes": [{ "pattern": "roguekeyboards.com", "custom_domain": true }]
+		}
+	}
+}

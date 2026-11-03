@@ -14,7 +14,7 @@ export default defineConfig({
 					filename.split(/[/\\]/).includes('node_modules') ? undefined : true
 			},
 			// Every route is prerendered (src/routes/+layout.ts). The fallback is only
-			// the 404 page.
+			// the 404 page, which wrangler.jsonc's not_found_handling serves.
 			adapter: adapter({ fallback: '404.html' }),
 			csp: {
 				mode: 'hash',
