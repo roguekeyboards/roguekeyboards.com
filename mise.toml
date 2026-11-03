@@ -1,2 +1,6 @@
 [tools]
 node = "24.22.2"
+
+[tasks.deploy-dev]
+description = "Deploy the current branch to https://beta.roguekeyboards.com until the next merge to main redeploys it: mise run deploy-dev (needs wrangler login)"
+run = ["npm run build", "npx wrangler deploy"]
