@@ -2,24 +2,11 @@
 @import '@roguekeyboards/brand/tokens.css';
 @import 'tailwindcss';
 
-/* Dark (navy) is the brand default; light follows the system setting. */
+/* Dark (navy) only, like mykeebs.com. */
 :root {
-	color-scheme: dark light;
+	color-scheme: dark;
 	--surface: color-mix(in srgb, var(--text) 5%, var(--bg));
 	--border: color-mix(in srgb, var(--text) 14%, var(--bg));
-	--accent-text: var(--accent);
-}
-
-@media (prefers-color-scheme: light) {
-	:root {
-		--bg: var(--bg-light);
-		--text: var(--text-on-light);
-		--text-muted: var(--text-muted-on-light);
-		--surface: #f4f5f7;
-		--border: #dfe2e7;
-		/* Amber is too faint for text on white; this darker shade keeps 4.5:1. */
-		--accent-text: #9a6212;
-	}
 }
 
 html,
@@ -66,7 +53,7 @@ body {
 	font-weight: 500;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
-	color: var(--accent-text);
+	color: var(--accent);
 }
 
 .section p {

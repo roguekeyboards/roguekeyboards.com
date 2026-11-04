@@ -1,10 +1,7 @@
 <script lang="ts">
 	import wordmarkOnDark from '@roguekeyboards/brand/wordmark-on-dark.svg';
-	import wordmarkOnLight from '@roguekeyboards/brand/wordmark-on-light.svg';
 	import mykeebsOnDark from '@roguekeyboards/mykeebs-brand/logo-horizontal-on-dark.svg';
-	import mykeebsOnLight from '@roguekeyboards/mykeebs-brand/logo-horizontal-on-light.svg';
 	import glitchWhite from '#lib/assets/twitch/glitch_flat_white.svg';
-	import glitchPurple from '#lib/assets/twitch/glitch_flat_purple.svg';
 
 	const CONTACT_EMAIL = 'hello@roguekeyboards.com';
 	const TWITCH_URL = 'https://www.twitch.tv/roguekeyboards';
@@ -23,10 +20,7 @@
 <div class="page">
 	<header class="hero">
 		<h1>
-			<picture>
-				<source srcset={wordmarkOnLight} media="(prefers-color-scheme: light)" />
-				<img src={wordmarkOnDark} alt="" width="290" height="106" class="wordmark" />
-			</picture>
+			<img src={wordmarkOnDark} alt="" width="290" height="106" class="wordmark" />
 			<span class="sr-only">Rogue Keyboards LLC</span>
 		</h1>
 	</header>
@@ -43,10 +37,7 @@
 	<section class="section" aria-labelledby="make-title">
 		<h2 id="make-title">What we make</h2>
 		<a href="https://mykeebs.com" class="card">
-			<picture>
-				<source srcset={mykeebsOnLight} media="(prefers-color-scheme: light)" />
-				<img src={mykeebsOnDark} alt="" width="297" height="76" class="card-logo" />
-			</picture>
+			<img src={mykeebsOnDark} alt="" width="297" height="76" class="card-logo" />
 			<span class="sr-only">mykeebs:</span>
 			<span class="card-text">
 				Track your keyboards, switches, keycap sets and builds, from planned to delivered. Free,
@@ -56,10 +47,7 @@
 		</a>
 		<a href={TWITCH_URL} class="card">
 			<span class="card-head">
-				<picture>
-					<source srcset={glitchPurple} media="(prefers-color-scheme: light)" />
-					<img src={glitchWhite} alt="" width="30" height="35" class="card-mark" />
-				</picture>
+				<img src={glitchWhite} alt="" width="30" height="35" class="card-mark" />
 				<span class="card-title">Live on Twitch</span>
 			</span>
 			<span class="card-text">Watch us build, tinker and talk keyboards, live.</span>
