@@ -10,15 +10,9 @@
 
 <svelte:head>
 	<title>Rogue Keyboards LLC</title>
-	<meta
-		name="description"
-		content="Rogue Keyboards LLC is a small Colorado company that builds software for the mechanical keyboard hobby, including mykeebs."
-	/>
+	<meta name="description" content="Rogue Keyboards LLC, the company behind mykeebs." />
 	<meta property="og:title" content="Rogue Keyboards LLC" />
-	<meta
-		property="og:description"
-		content="Software for the mechanical keyboard hobby, including mykeebs."
-	/>
+	<meta property="og:description" content="The company behind mykeebs." />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://roguekeyboards.com/" />
 </svelte:head>
@@ -32,9 +26,6 @@
 			</picture>
 			<span class="sr-only">Rogue Keyboards LLC</span>
 		</h1>
-		<p class="lede">
-			A small Colorado company building software for the mechanical keyboard hobby.
-		</p>
 	</header>
 
 	<section class="section" aria-labelledby="make-title">

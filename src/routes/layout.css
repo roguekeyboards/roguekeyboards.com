@@ -60,14 +60,6 @@ body {
 	height: auto;
 }
 
-.lede {
-	margin-top: 2rem;
-	font-size: 1.25rem;
-	font-weight: 300;
-	line-height: 1.5;
-	color: var(--text-muted);
-}
-
 .section h2 {
 	margin-bottom: 1rem;
 	font-size: 0.8125rem;
