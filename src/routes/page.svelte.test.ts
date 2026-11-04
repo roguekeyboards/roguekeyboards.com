@@ -14,7 +14,21 @@ describe('home page', () => {
 	it('links to mykeebs', async () => {
 		await render(Page);
 		await expect
-			.element(page.getByRole('link', { name: 'mykeebs' }))
+			.element(page.getByRole('link', { name: /mykeebs/ }))
 			.toHaveAttribute('href', 'https://mykeebs.com');
+	});
+
+	it('links to the Twitch channel', async () => {
+		await render(Page);
+		await expect
+			.element(page.getByRole('link', { name: /Live on Twitch/ }))
+			.toHaveAttribute('href', 'https://www.twitch.tv/roguekeyboards');
+	});
+
+	it('shows the contact email', async () => {
+		await render(Page);
+		await expect
+			.element(page.getByRole('link', { name: 'hello@roguekeyboards.com' }))
+			.toHaveAttribute('href', 'mailto:hello@roguekeyboards.com');
 	});
 });
