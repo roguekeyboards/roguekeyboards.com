@@ -18,6 +18,13 @@ describe('home page', () => {
 			.toHaveAttribute('href', 'https://mykeebs.com');
 	});
 
+	it('links to the Twitch channel', async () => {
+		await render(Page);
+		await expect
+			.element(page.getByRole('link', { name: /Live on Twitch/ }))
+			.toHaveAttribute('href', 'https://www.twitch.tv/roguekeyboards');
+	});
+
 	it('shows the contact email', async () => {
 		await render(Page);
 		await expect

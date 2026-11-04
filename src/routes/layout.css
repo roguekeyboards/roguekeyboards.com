@@ -91,6 +91,26 @@ body {
 	border-color: var(--accent);
 }
 
+.section .card + .card {
+	margin-top: 1rem;
+}
+
+.card-head {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.card-mark {
+	width: 2.25rem;
+	height: auto;
+}
+
+.card-title {
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
 .card-logo {
 	width: 9rem;
 	height: auto;

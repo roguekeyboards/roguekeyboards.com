@@ -3,8 +3,11 @@
 	import wordmarkOnLight from '@roguekeyboards/brand/wordmark-on-light.svg';
 	import mykeebsOnDark from '@roguekeyboards/mykeebs-brand/logo-horizontal-on-dark.svg';
 	import mykeebsOnLight from '@roguekeyboards/mykeebs-brand/logo-horizontal-on-light.svg';
+	import markOnDark from '@roguekeyboards/brand/mark-on-dark.svg';
+	import markOnLight from '@roguekeyboards/brand/mark-on-light.svg';
 
 	const CONTACT_EMAIL = 'hello@roguekeyboards.com';
+	const TWITCH_URL = 'https://www.twitch.tv/roguekeyboards';
 	const year = new Date().getFullYear();
 </script>
 
@@ -50,6 +53,17 @@
 				with no ads and no tracking.
 			</span>
 			<span class="card-cta" aria-hidden="true">mykeebs.com →</span>
+		</a>
+		<a href={TWITCH_URL} class="card">
+			<span class="card-head">
+				<picture>
+					<source srcset={markOnLight} media="(prefers-color-scheme: light)" />
+					<img src={markOnDark} alt="" width="40" height="40" class="card-mark" />
+				</picture>
+				<span class="card-title">Live on Twitch</span>
+			</span>
+			<span class="card-text">Watch us build, tinker and talk keyboards, live.</span>
+			<span class="card-cta" aria-hidden="true">twitch.tv/roguekeyboards →</span>
 		</a>
 	</section>
 
