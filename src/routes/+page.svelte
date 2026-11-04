@@ -28,6 +28,15 @@
 		</h1>
 	</header>
 
+	<section class="section" aria-labelledby="who-title">
+		<h2 id="who-title">Who we are</h2>
+		<p>
+			We fell down the mechanical keyboard rabbit hole in 2025. In 2026, we decided it was time to
+			give something back to the hobby we love: software, services and content we hope others find
+			useful, and maybe a little entertaining.
+		</p>
+	</section>
+
 	<section class="section" aria-labelledby="make-title">
 		<h2 id="make-title">What we make</h2>
 		<a href="https://mykeebs.com" class="card">
