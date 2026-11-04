@@ -3,8 +3,8 @@
 	import wordmarkOnLight from '@roguekeyboards/brand/wordmark-on-light.svg';
 	import mykeebsOnDark from '@roguekeyboards/mykeebs-brand/logo-horizontal-on-dark.svg';
 	import mykeebsOnLight from '@roguekeyboards/mykeebs-brand/logo-horizontal-on-light.svg';
-	import markOnDark from '@roguekeyboards/brand/mark-on-dark.svg';
-	import markOnLight from '@roguekeyboards/brand/mark-on-light.svg';
+	import glitchWhite from '#lib/assets/twitch/glitch_flat_white.svg';
+	import glitchPurple from '#lib/assets/twitch/glitch_flat_purple.svg';
 
 	const CONTACT_EMAIL = 'hello@roguekeyboards.com';
 	const TWITCH_URL = 'https://www.twitch.tv/roguekeyboards';
@@ -57,8 +57,8 @@
 		<a href={TWITCH_URL} class="card">
 			<span class="card-head">
 				<picture>
-					<source srcset={markOnLight} media="(prefers-color-scheme: light)" />
-					<img src={markOnDark} alt="" width="40" height="40" class="card-mark" />
+					<source srcset={glitchPurple} media="(prefers-color-scheme: light)" />
+					<img src={glitchWhite} alt="" width="30" height="35" class="card-mark" />
 				</picture>
 				<span class="card-title">Live on Twitch</span>
 			</span>
