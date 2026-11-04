@@ -14,7 +14,14 @@ describe('home page', () => {
 	it('links to mykeebs', async () => {
 		await render(Page);
 		await expect
-			.element(page.getByRole('link', { name: 'mykeebs' }))
+			.element(page.getByRole('link', { name: /mykeebs/ }))
 			.toHaveAttribute('href', 'https://mykeebs.com');
+	});
+
+	it('shows the contact email', async () => {
+		await render(Page);
+		await expect
+			.element(page.getByRole('link', { name: 'hello@roguekeyboards.com' }))
+			.toHaveAttribute('href', 'mailto:hello@roguekeyboards.com');
 	});
 });
