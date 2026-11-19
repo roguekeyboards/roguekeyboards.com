@@ -2,9 +2,11 @@
 	import wordmarkOnDark from '@roguekeyboards/brand/wordmark-on-dark.svg';
 	import mykeebsOnDark from '@roguekeyboards/mykeebs-brand/logo-horizontal-on-dark.svg';
 	import glitchWhite from '#lib/assets/twitch/glitch_flat_white.svg';
+	import discordWhite from '#lib/assets/discord/Discord-Symbol-White.svg';
 
 	const CONTACT_EMAIL = 'hello@roguekeyboards.com';
 	const TWITCH_URL = 'https://www.twitch.tv/roguekeyboards';
+	const DISCORD_URL = 'https://discord.gg/3xs65baqhd';
 	const year = new Date().getFullYear();
 </script>
 
@@ -43,7 +45,7 @@
 				Track your keyboards, switches, keycap sets and builds, from planned to delivered. Free,
 				with no ads and no tracking.
 			</span>
-			<span class="card-cta" aria-hidden="true">mykeebs.com →</span>
+			<span class="card-cta" aria-hidden="true">Track your keebs →</span>
 		</a>
 		<a href={TWITCH_URL} class="card">
 			<span class="card-head">
@@ -51,7 +53,15 @@
 				<span class="card-title">Live on Twitch</span>
 			</span>
 			<span class="card-text">Watch us build, tinker and talk keyboards, live.</span>
-			<span class="card-cta" aria-hidden="true">twitch.tv/roguekeyboards →</span>
+			<span class="card-cta" aria-hidden="true">Follow us →</span>
+		</a>
+		<a href={DISCORD_URL} class="card">
+			<span class="card-head">
+				<img src={discordWhite} alt="" width="36" height="27" class="card-mark card-mark-wide" />
+				<span class="card-title">Join us on Discord</span>
+			</span>
+			<span class="card-text">Talk keyboards with us and the community, on stream and off.</span>
+			<span class="card-cta" aria-hidden="true">Join the server →</span>
 		</a>
 	</section>
 
