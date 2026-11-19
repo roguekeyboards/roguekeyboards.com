@@ -25,6 +25,13 @@ describe('home page', () => {
 			.toHaveAttribute('href', 'https://www.twitch.tv/roguekeyboards');
 	});
 
+	it('links to the Discord server', async () => {
+		await render(Page);
+		await expect
+			.element(page.getByRole('link', { name: /Join us on Discord/ }))
+			.toHaveAttribute('href', 'https://discord.gg/3xs65baqhd');
+	});
+
 	it('shows the contact email', async () => {
 		await render(Page);
 		await expect

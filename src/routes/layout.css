@@ -93,6 +93,11 @@ body {
 	height: auto;
 }
 
+/* The Discord symbol is wider than it is tall, so it gets more width to match the Glitch's height. */
+.card-mark-wide {
+	width: 2.25rem;
+}
+
 .card-title {
 	font-size: 1.25rem;
 	font-weight: 500;
