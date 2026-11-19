@@ -52,7 +52,7 @@
 		"#lib/*": "./src/lib/*"
 	},
 	"dependencies": {
-		"@roguekeyboards/brand": "^0.1.1",
+		"@roguekeyboards/brand": "^0.2.0",
 		"@roguekeyboards/mykeebs-brand": "^1.71.0"
 	}
 }
