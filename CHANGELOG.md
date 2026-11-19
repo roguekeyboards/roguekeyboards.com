@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/roguekeyboards/roguekeyboards.com/compare/v1.0.0...v1.1.0) (2026-11-19)
+
+
+### Features
+
+* link to the Discord server ([#37](https://github.com/roguekeyboards/roguekeyboards.com/issues/37)) ([5a00fc6](https://github.com/roguekeyboards/roguekeyboards.com/commit/5a00fc633612afbc192992756e922cc34aba1a0d))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @roguekeyboards/brand to ^0.2.0 ([#35](https://github.com/roguekeyboards/roguekeyboards.com/issues/35)) ([734a1da](https://github.com/roguekeyboards/roguekeyboards.com/commit/734a1da1c84deaf7fdd6b6f411d00f6a4e932150))
+
 ## 1.0.0 (2026-11-04)
 
 
